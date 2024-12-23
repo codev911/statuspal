@@ -14,3 +14,8 @@ services:
     image: postgres:9.5
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: statuspal
+volumes:
+  statushq:
+  postgres:
